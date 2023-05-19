@@ -1,0 +1,93 @@
+networkDescription: University Currency Testnet
+initialCurrencyAtomicUnits: 8998999998000000
+maxMosaicAtomicUnits: 9000000000000000
+totalChainImportance: 15000000
+minHarvesterBalance: 500
+maxHarvesterBalance: 50000000000000
+networkType: 152
+minVoterBalance: 50000
+baseNamespace: network
+explorerUrl: http://localhost:90/
+faucetUrl: http://localhost:100/
+beneficiaryAddress: ''
+votingKeyDesiredLifetime: 720
+votingKeyDesiredFutureLifetime: 120
+lastKnownNetworkEpoch: 1
+restExtensions: accountLink, aggregate, lockHash, lockSecret, mosaic, metadata, multisig, namespace, receipts, restrictions, transfer
+nemesis:
+    mosaics:
+        -
+            name: univ
+            divisibility: 6
+            duration: 0
+            supply: 8998999998000000
+            isTransferable: true
+            isSupplyMutable: false
+            isRestrictable: false
+            accounts: 5
+        -
+            name: harvest
+            divisibility: 3
+            duration: 0
+            supply: 15000000
+            isTransferable: true
+            isSupplyMutable: true
+            isRestrictable: false
+            accounts: 2
+inflation:
+    starting-at-height-1: 0
+    starting-at-height-10000: 0
+nemesisSeedFolder: nemesis-seed
+nemesisSignerPublicKey: 25D2FB8D9A455EAA36267F7FA015E8851323E440D32A51D850D44928CE09676E
+harvestNetworkFeeSinkAddress: TBM56HNYLSZF6MIB6TC6CQHYEWAGGQBBNRHENEY
+namespaceRentalFeeSinkAddress: TA64ZUPPVWN6HQ7ULWEAWNYPIWGNRK6FO3FTXNA
+mosaicRentalFeeSinkAddress: TAYK3JH3VHZERXLNBNE3UYVHZBYA4X2EZJG4UOA
+nemesisGenerationHashSeed: BC9DF0A20BDA458B2FA5ED00692974A6E04FB9F30D2BF9A06CEFBD151D2333AE
+epochAdjustment: 1682428412s
+knownRestGateways:
+    - https://network-dual-001.kobakaku.com:3001
+    - https://network-dual-002.kobakaku.com:3001
+    - https://network-dual-003.kobakaku.com:3001
+    - https://network-harvest-001.kobakaku.com:3001
+    - https://network-harvest-002.kobakaku.com:3001
+knownPeers:
+    -
+        publicKey: E673A951D7A6E7E0BFF5A6C6FF44EB502EC8C9A2DE5214C25FB325CAA42E6700
+        endpoint:
+            host: network-dual-001.kobakaku.com
+            port: 7900
+        metadata:
+            name: network-dual-001
+            roles: Api,Peer,Voting
+    -
+        publicKey: 76C9A9D6E4BF75AB152369FF9D05DA55948ABD3BC9E104AAA0EAAA464119DB4A
+        endpoint:
+            host: network-dual-002.kobakaku.com
+            port: 7900
+        metadata:
+            name: network-dual-002
+            roles: Api,Peer,Voting
+    -
+        publicKey: 417D1F3E322033159C6A140642351CDF09C9E8431FBC10B048E6C16D1A381B11
+        endpoint:
+            host: network-dual-003.kobakaku.com
+            port: 7900
+        metadata:
+            name: network-dual-003
+            roles: Api,Peer,Voting
+    -
+        publicKey: 1B9EA4ACE978895FFAC3502141E617CD2748F8BA65000E5A7B7678133B8AD3EF
+        endpoint:
+            host: network-harvest-001.kobakaku.com
+            port: 7900
+        metadata:
+            name: network-harvest-001
+            roles: Api,Peer
+    -
+        publicKey: 1C3451D4FA7A8E5F61E9A3D307750D77B8950AF5D574B01AF974E4B614290C7E
+        endpoint:
+            host: network-harvest-002.kobakaku.com
+            port: 7900
+        metadata:
+            name: network-harvest-002
+            roles: Api,Peer
